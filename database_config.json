@@ -1,0 +1,8 @@
+{
+    "db1": {
+      "mongodbURI": "mongodb://my-username:my-password@my-cluster/sacred_db1",
+      "path": "/results/sacred/",
+      "runsCollectionName": "runs", // optional
+      "metricsCollectionName": "metrics" // optional
+    }
+}

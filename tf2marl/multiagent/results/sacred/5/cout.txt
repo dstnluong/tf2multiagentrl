@@ -1,0 +1,1472 @@
+INFO - train - Running command 'train'
+INFO - train - Started run with ID "5"
+{'exp_name': 'default', 'display': False, 'restore_fp': None, 'save_rate': 10, 'scenario_name': 'simple_spread', 'num_episodes': 100, 'max_episode_len': 25, 'good_policy': 'matd3', 'adv_policy': 'matd3', 'lr': 0.01, 'gamma': 0.95, 'batch_size': 1024, 'num_layers': 2, 'num_units': 128, 'update_rate': 100, 'critic_zero_if_done': False, 'buff_size': 1000000.0, 'tau': 0.01, 'hard_max': False, 'priori_replay': False, 'alpha': 0.6, 'beta': 0.5, 'use_target_action': True, 'policy_update_rate': 1, 'critic_action_noise_stddev': 0.0, 'action_noise_clip': 0.5, 'entropy_coeff': 0.05, 'num_atoms': 51, 'min_val': -400, 'max_val': 0, 'seed': 814463308}
+2021-04-07 01:32:21.000564: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-04-07 01:32:21.015087: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f8d0745caf0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-07 01:32:21.015109: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Using good policy matd3 and adv policy matd3
+5
+Starting iterations...
+WARNING:tensorflow:5 out of the last 5 calls to <function MADDPGPolicyNetwork.get_action at 0x1ee9712378> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING - tensorflow - 5 out of the last 5 calls to <function MADDPGPolicyNetwork.get_action at 0x1ee9712378> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function MADDPGPolicyNetwork.get_action at 0x1ee9712ea0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING - tensorflow - 6 out of the last 6 calls to <function MADDPGPolicyNetwork.get_action at 0x1ee9712ea0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:7 out of the last 7 calls to <function MADDPGPolicyNetwork.get_action at 0x1ee96d1a60> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING - tensorflow - 7 out of the last 7 calls to <function MADDPGPolicyNetwork.get_action at 0x1ee96d1a60> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:8 out of the last 8 calls to <function MADDPGPolicyNetwork.get_action at 0x1ee9739620> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING - tensorflow - 8 out of the last 8 calls to <function MADDPGPolicyNetwork.get_action at 0x1ee9739620> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:9 out of the last 9 calls to <function MADDPGPolicyNetwork.get_action at 0x1ee974f1e0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING - tensorflow - 9 out of the last 9 calls to <function MADDPGPolicyNetwork.get_action at 0x1ee974f1e0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:10 out of the last 10 calls to <function MADDPGPolicyNetwork.get_action at 0x1ee974fd08> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING - tensorflow - 10 out of the last 10 calls to <function MADDPGPolicyNetwork.get_action at 0x1ee974fd08> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+Cost: -7.241536691124179
+Cost: -7.268331970471746
+Cost: -7.266771255830432
+Cost: -7.261898195778761
+Cost: -7.26889573028275
+Cost: -7.24473592288248
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.2328771945592845
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532877507724
+Cost: -7.268331803517273
+Cost: -7.266771256297784
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244848858666666
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874887107032
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.24153284784316
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244765360327697
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874892523593
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.2448181491472
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.2447837071450145
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244805756852372
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244791457069127
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244800656618318
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244794712171889
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.2447985376705475
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+steps: 9, episodes: 10, mean episode reward: -72.56621837943061, agent episode reward: [-7.241532851000233, -7.268331806609022, -7.266771256349713, -7.261898194553063, -7.26889573028275, -7.244800799518758, -7.2470843298323775, -7.284100939961563, -7.249927582209979, -7.232874889113166], time: 0.459
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244796067773833
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797663096785
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244796637049233
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.2447972906712605
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244796872154188
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797141075337
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244796968001674
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797082470435
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.24479701013047
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797056966725
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+steps: 19, episodes: 20, mean episode reward: -72.566214656948, agent episode reward: [-7.241532847664457, -7.268331806995491, -7.266771256356203, -7.261898194553063, -7.26889573028275, -7.244797080179568, -7.2470843298323775, -7.284100939961563, -7.249927582209979, -7.232874888912552], time: 0.953
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.2447970255042025
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797046330247
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797033012305
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038107088
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+steps: 29, episodes: 30, mean episode reward: -72.56621461385922, agent episode reward: [-7.241532847664457, -7.268331806995491, -7.266771256356203, -7.261898194553063, -7.26889573028275, -7.24479703709078, -7.2470843298323775, -7.284100939961563, -7.249927582209979, -7.232874888912552], time: 1.103
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+steps: 39, episodes: 40, mean episode reward: -72.5662146131276, agent episode reward: [-7.241532847664457, -7.268331806995491, -7.266771256356203, -7.261898194553063, -7.26889573028275, -7.24479703635917, -7.2470843298323775, -7.284100939961563, -7.249927582209979, -7.232874888912552], time: 1.131
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+steps: 49, episodes: 50, mean episode reward: -72.56621461295545, agent episode reward: [-7.241532847664457, -7.268331806995491, -7.266771256356203, -7.261898194553063, -7.26889573028275, -7.244797036187027, -7.2470843298323775, -7.284100939961563, -7.249927582209979, -7.232874888912552], time: 1.121
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.247084329832377
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+steps: 59, episodes: 60, mean episode reward: -72.5662146131276, agent episode reward: [-7.241532847664457, -7.268331806995491, -7.266771256356203, -7.261898194553063, -7.26889573028275, -7.24479703635917, -7.2470843298323775, -7.284100939961563, -7.249927582209979, -7.232874888912552], time: 1.111
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+steps: 69, episodes: 70, mean episode reward: -72.56621461295545, agent episode reward: [-7.241532847664457, -7.268331806995491, -7.266771256356203, -7.261898194553063, -7.26889573028275, -7.244797036187027, -7.2470843298323775, -7.284100939961563, -7.249927582209979, -7.232874888912552], time: 1.053
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+steps: 79, episodes: 80, mean episode reward: -72.5662146131276, agent episode reward: [-7.241532847664457, -7.268331806995491, -7.266771256356203, -7.261898194553063, -7.26889573028275, -7.24479703635917, -7.2470843298323775, -7.284100939961563, -7.249927582209979, -7.232874888912552], time: 1.141
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+steps: 89, episodes: 90, mean episode reward: -72.56621461295545, agent episode reward: [-7.241532847664457, -7.268331806995491, -7.266771256356203, -7.261898194553063, -7.26889573028275, -7.244797036187027, -7.2470843298323775, -7.284100939961563, -7.249927582209979, -7.232874888912552], time: 1.109
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797035187271
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797036676974
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797034412625
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+Cost: -7.232874888912552
+Cost: -7.241532847664458
+Cost: -7.268331806995491
+Cost: -7.266771256356203
+Cost: -7.261898194553063
+Cost: -7.26889573028275
+Cost: -7.244797038226264
+Cost: -7.247084329832377
+Cost: -7.284100939961562
+Cost: -7.249927582209979
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Cost: -7.232874888912552
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/fromnumeric.py:3335: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Users/dustin/anaconda3/envs/RAISE/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+steps: 99, episodes: 100, mean episode reward: -72.5662146131276, agent episode reward: [-7.241532847664457, -7.268331806995491, -7.266771256356203, -7.261898194553063, -7.26889573028275, -7.24479703635917, -7.2470843298323775, -7.284100939961563, -7.249927582209979, -7.232874888912552], time: 1.051
+...Finished total of 100 episodes in 0.18757856686909993 minutes.
+5
+INFO - train - Result: (array([-72.56615981, -72.56626646, -72.56618294, -72.56623573,
+       -72.56620128, -72.56622333, -72.56620903, -72.56621823,
+       -72.56621229, -72.56621611, -72.56621364, -72.56621524,
+       -72.56621421, -72.56621487, -72.56621445, -72.56621472,
+       -72.56621454, -72.56621466, -72.56621459, -72.56621463,
+       -72.5662146 , -72.56621462, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+       -72.56621461, -72.56621461, -72.56621461, -72.56621461,
+         0.        ]), array([[-7.24153669, -7.24153288, -7.24153285, ..., -7.24153285,
+        -7.24153285,  0.        ],
+       [-7.26833197, -7.2683318 , -7.26833181, ..., -7.26833181,
+        -7.26833181,  0.        ],
+       [-7.26677126, -7.26677126, -7.26677126, ..., -7.26677126,
+        -7.26677126,  0.        ],
+       ...,
+       [-7.28410094, -7.28410094, -7.28410094, ..., -7.28410094,
+        -7.28410094,  0.        ],
+       [-7.24992758, -7.24992758, -7.24992758, ..., -7.24992758,
+        -7.24992758,  0.        ],
+       [-7.23287719, -7.23287489, -7.23287489, ..., -7.23287489,
+        -7.23287489,  0.        ]]))
